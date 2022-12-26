@@ -3,10 +3,13 @@ package com.example.springcourse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * Class which emulate computer
+ */
 @Component
 public class Computer {
-    private int id;
-    private MusicPlayer musicPlayer;
+    private final int id;
+    private final MusicPlayer musicPlayer;
 
     @Autowired
     public Computer(MusicPlayer musicPlayer) {
@@ -18,7 +21,7 @@ public class Computer {
     public String toString() {
         return "Computer{" +
                 "id=" + id +
-                ", musicPlayer= " + musicPlayer.playMusic() +
+                ", musicPlayer= " + musicPlayer.playMusic(MusicType.ROCK) +
                 '}';
     }
 }

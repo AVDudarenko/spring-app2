@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7970762-e5cb-4602-850a-72d02b1b8d4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/ClassicMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/RockMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/TestSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="c7970762-e5cb-4602-850a-72d02b1b8d4c" name="Changes" comment="add annotations">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/MusicType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.springcourse/ClassicMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/ClassicMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.springcourse/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.springcourse/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.springcourse/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.springcourse/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/RockMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.springcourse/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.springcourse/TestSpring.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -105,12 +98,24 @@
       <updated>1672050690394</updated>
       <workItem from="1672050691966" duration="1371000" />
       <workItem from="1672052119171" duration="242000" />
-      <workItem from="1672052364476" duration="1326000" />
+      <workItem from="1672052364476" duration="4157000" />
     </task>
+    <task id="LOCAL-00001" summary="add annotations">
+      <created>1672082637605</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672082637606</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add annotations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
