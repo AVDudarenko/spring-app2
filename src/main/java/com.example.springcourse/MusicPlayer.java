@@ -2,45 +2,48 @@ package com.example.springcourse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * Class
  */
 @Component
 public class MusicPlayer {
-    private final Music rockMusic;
-    private final Music classicMusic;
+
+    /**
+     * Annotation Value inject value from musicPlayer.properties file in variable nameOfPlayer
+     */
+    @Value("${musicPlayer.name}")
+    private String nameOfPlayer;
+
+    @Value("${musicPlayer.volume}")
+    private int volume;
+
+    private final List<Music> listOfMusicType;
 
     /**
      * Constructor which said what bean we need
      *
-     * @param rockMusic
-     * @param classicMusic
+     * @param listOfMusicType contains types of music
      */
     @Autowired
-    public MusicPlayer(@Qualifier("rockMusic") Music rockMusic, @Qualifier("classicMusic") Music classicMusic) {
-        this.rockMusic = rockMusic;
-        this.classicMusic = classicMusic;
+    public MusicPlayer(List<Music> listOfMusicType) {
+        this.listOfMusicType = listOfMusicType;
     }
 
     /**
      * Method for playing music
      *
-     * @param musicType contains type of music
      * @return music song
      */
-    public String playMusic(MusicType musicType) {
-        switch (musicType) {
-            case ROCK -> {
-                return "Playing: " + rockMusic.getSong();
-            }
-            case CLASSIC -> {
-                return "Playing: " + classicMusic.getSong();
-            }
-            default -> {
-                return "No songs available";
-            }
-        }
+    public String playMusic() {
+        Random random = new Random();
+
+        return "Playing: " + listOfMusicType.get(random.nextInt(listOfMusicType.size())).getSong()
+                + ", with volume: " + this.volume + ", name of player: " + this.nameOfPlayer;
     }
 }
